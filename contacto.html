@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat's Well - Contacto</title>
+    <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="IMG/eatswell.jpg" alt="Logo de la página" class="header-logo"></a>
+
+        <ul class="header-redes">
+            <li><a href="https://ar.pinterest.com/" target="_blank"><img src="IMG/pinterestlogo.png" alt="logo de pinterest"></a></li>
+            <li><a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="IMG/iglogo.png" alt="logo de instagram"></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="IMG/fblogo.png" alt="logo de facebook"></a></li>
+        </ul>
+
+        <br>
+
+        <input type="text" placeholder="Buscar..." class="header-browser"><button type="submit" class="header-browser__button">Buscar</button>
+
+        <h2 class="section-title">Contacto</h2>
+    </header>
+
+    <aside>
+        <nav class="aside-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="receta.html">Recetas</a></li>
+                <li><a href="recomendacion.html">Recomendaciones de Restaurantes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="aboutus.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="contact-form">
+        <form action="contactar.php" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <div class="en-columna">
+                    <h5>Ingrese sus datos y nos contactaremos con usted</h5>
+                </div>
+                <div class="en-columna">
+                    <label for="nombreyapellido">Ingrese nombre y apellido</label>
+                    <input type="text" placeholder="Nombre y Apellido" id="nombreyapellido" name="nombreyapellido" maxlength="100">
+                </div>
+                <div class="en-columna">
+                    <label for="sexo">¿Cómo se identifica?</label>
+                    <select name="sexo" id="sexo">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="otro">Otro</option>
+                        <option value="No contesta">Prefiero no contestar</option>
+                    </select>
+                </div>
+                <div class="en-columna">
+                    <label for="email">Ingrese su e-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su mail">
+                </div>
+                <div class="en-fila">
+                    <label for="siNS">¿Desea recibir nuestro newsletter?</label>
+                    <input type="checkbox" name="siNS" id="siNS">
+                </div>
+                <div class="en-fila">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>
+            Inicio Mayo 2021 -
+            @Copyright "Eat's Well" -
+            By: Mauro Di Cesare
+        </p>
+    </footer>
+
+</body>
+</html>
