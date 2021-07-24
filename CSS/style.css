@@ -91,11 +91,12 @@ body {
   color: white;
   display: block;
   margin: 10px;
-  padding: 10px;
+  padding: 8px;
   border-radius: 4px;
 }
 .aside__menu ul li a:hover {
   background-image: linear-gradient(to right, #116c48, #71B78D);
+  padding: 16px;
 }
 
 @keyframes animamenu {
@@ -217,6 +218,9 @@ body {
   grid-area: main;
   margin: 2rem;
 }
+.main__aboutus div p {
+  font-size: 24px;
+}
 
 /*---------------------------------*/
 /*------Estilos en el footer------*/
@@ -240,7 +244,7 @@ footer .footer__topbut {
   border-radius: 4px;
 }
 footer .footer__topbut:hover {
-  box-shadow: 5px 5px #115328;
+  box-shadow: 5px 5px #116c48;
   transform: translate(-3px, -3px);
   text-decoration: none;
   color: white;

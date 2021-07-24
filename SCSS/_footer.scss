@@ -1,3 +1,8 @@
+$fontSize: 16px;
+$lighterGreen: #d2f9d9;
+$green: #71B78D;
+$darkGreen: #116c48;
+
 /*------Estilos en el footer------*/
 footer{
     grid-area: footer;
@@ -10,7 +15,7 @@ footer{
 
     .footer__topbut{
         padding: 10px;
-        background-color: #71B78D;
+        background-color: $green;
         text-decoration: none;
         color: white;
         position: absolute;
@@ -20,7 +25,7 @@ footer{
         border-radius: 4px;
 
         &:hover{
-            box-shadow: 5px 5px #115328;
+            box-shadow: 5px 5px $darkGreen;
             transform: translate(-3px, -3px);
             text-decoration: none;
             color: white;

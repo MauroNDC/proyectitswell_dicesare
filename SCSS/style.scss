@@ -5,9 +5,14 @@
 @import 'main.scss';
 @import 'footer.scss';
 
+$fontSize: 16px;
+$lighterGreen: #d2f9d9;
+$green: #71B78D;
+$darkGreen: #116c48;
+
 /*----Estilos para tablas----*/
 table{
-    background-color: #d2f9d9;
+    background-color: $lighterGreen;
     border-collapse: collapse;
     thead, tbody {
             border: 1px black solid;
@@ -16,7 +21,7 @@ table{
 
 /*Título por sección*/
 .section-title{
-    color: #116c48;
+    color: $darkGreen;
     font-size: xx-large;
 }
 

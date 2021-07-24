@@ -1,3 +1,8 @@
+$fontSize: 16px;
+$lighterGreen: #d2f9d9;
+$green: #71B78D;
+$darkGreen: #116c48;
+
 /*----Header de la página*/
 header {
     grid-area: header;
@@ -45,7 +50,7 @@ header {
 .header__browser-button{
     border: none;
     border-radius: 2px;
-    background-color: #71B78D;
+    background-color: $green;
     padding: 3px;
     color: white;
     cursor: pointer;

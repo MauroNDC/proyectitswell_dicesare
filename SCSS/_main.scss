@@ -1,3 +1,8 @@
+$fontSize: 16px;
+$lighterGreen: #d2f9d9;
+$green: #71B78D;
+$darkGreen: #116c48;
+
 /*------Estilos en el main------*/
 /*main del Home*/
 .main__home{
@@ -96,7 +101,7 @@
     fieldset{
         display: flex;
         flex-direction: column;
-        background-color: #71B78D;
+        background-color: $green;
     }
 
     form{
@@ -130,6 +135,11 @@
 .main__aboutus{
     grid-area: main;
     margin: 2rem;
+    div{
+        p{
+            font-size: $fontSize*1.5;
+        }
+    }
 }
 
 /*---------------------------------*/

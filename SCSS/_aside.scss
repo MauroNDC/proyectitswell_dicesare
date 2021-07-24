@@ -1,10 +1,15 @@
+$lighterGreen: #d2f9d9;
+$green: #71B78D;
+$darkGreen: #116c48;
+$padBotones: 8px;
+
 /*Menú lateral*/
 .aside__menu{
     height: 100vh;
     top: 0;
     margin: 0;
     width: 209px;
-    background-color: #71B78D;
+    background-color: $green;
     animation-duration: 2s;
     animation-name: animamenu;
     animation-iteration-count: 1;
@@ -20,11 +25,12 @@
                 color: white;
                 display: block;
                 margin: 10px;
-                padding: 10px;
+                padding: $padBotones;
                 border-radius: 4px;
 
                 &:hover{
-                    background-image: linear-gradient(to right,#116c48,#71B78D);
+                    background-image: linear-gradient(to right, $darkGreen, $green);
+                    padding: $padBotones*2;
                 }
             }
         }
@@ -37,7 +43,7 @@
         background-color: #ffffff;
     }
     100%{
-        background-color: #71B78D;
+        background-color: $green;
     }
 }
 /*---------------------------------*/
