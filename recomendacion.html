@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--Encabezado, logo, redes sociales y buscador-->
     <header class="header">
         <a href="index.html"><img src="IMG/eatswell.jpg" alt="Logo de la página" id="top-recom" class="header-logo"></a>
 
@@ -27,6 +30,7 @@
         <h2 class="section-title">Recomendación de restaurantes</h2>
     </header>
 
+    <!--Menú lateral-->
     <aside>
         <nav class="aside-menu">
             <ul>
@@ -40,12 +44,41 @@
     </aside>
 
     <main class="main-recom">
+        <!--Sección 1-->
         <section class="section1">
-            <div>
-                <h3>Sacro - Comida Vegetariana</h3>
-                <img src="IMG/imggen.png" alt="Plato de comida vegetariana" class="imgs">
-                <img src="IMG/imggen.png" alt="Foto del restaurante por dentro" class="imgs">
-            </div>
+                <!--Nombre del restaurante y tipo de cocina-->
+                <div> 
+                    <h3>Sacro - Comida Vegetariana</h3>
+                </div>
+                <!--Carrusel con imágenes del restaurante y de la comida-->
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="IMG/imagen.png" alt="imagen del restaurante">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG/imagen.png" alt="imagen del restaurante">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG/imagen.png" alt="imagen de la comida">
+                        </div>
+                    </div>
+                </div>
+            <!--Reseña del restaurante-->
             <div>
                 <h3>Reseña</h3>
                 <p>For his inaugural restaurant venture, entrepreneur Damian Harburguer’s plant-based eatery, located in style conscious Palermo Hollywood, proposes an international approach to vegan food, with a slick menu of seasonal and organic local ingredients, strictly devoid of animal derivatives.
@@ -54,6 +87,7 @@
                     The sharing options include the wafer thin dosa and stand out palta tikka, aromatic crusted avocado in a velvety smooth curry sauce. Don’t miss the sublime ‘Snickers’ style salted caramel chocolate tart and avocado lime pie, rounded off with an almond milk cortado. Everything is made in house including the fresh coconut water available to go.
                 </p>
             </div>
+            <!--Datos del Restaurante-->
             <div>
                 <h4>Datos</h4>
                 <ul>
@@ -65,12 +99,41 @@
             </div>
         </section>
 
+        <!--Sección 2-->
         <section class="section2">
-            <div>
+            <!--Nombre del restaurante y tipo de cocina-->
+            <div> 
                 <h3>Sacro - Comida Vegetariana</h3>
-                <img src="IMG/imggen.png" alt="Plato de comida vegetariana" class="imgs">
-                <img src="IMG/imggen.png" alt="Foto del restaurante por dentro" class="imgs">
             </div>
+            <!--Carrusel con imágenes del restaurante y de la comida-->
+            <div id="demo2" class="carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                  <li data-target="#demo2" data-slide-to="3" class="active"></li>
+                  <li data-target="#demo2" data-slide-to="4"></li>
+                  <li data-target="#demo2" data-slide-to="5"></li>
+                </ul>
+
+                <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo2" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="IMG/imagen.png" alt="imagen del restaurante">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/imagen.png" alt="imagen del restaurante">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/imagen.png" alt="imagen de la comida">
+                    </div>
+                </div>
+            </div>
+            <!--Reseña del restaurante-->
             <div>
                 <h3>Reseña</h3>
                 <p>For his inaugural restaurant venture, entrepreneur Damian Harburguer’s plant-based eatery, located in style conscious Palermo Hollywood, proposes an international approach to vegan food, with a slick menu of seasonal and organic local ingredients, strictly devoid of animal derivatives.
@@ -79,6 +142,7 @@
                     The sharing options include the wafer thin dosa and stand out palta tikka, aromatic crusted avocado in a velvety smooth curry sauce. Don’t miss the sublime ‘Snickers’ style salted caramel chocolate tart and avocado lime pie, rounded off with an almond milk cortado. Everything is made in house including the fresh coconut water available to go.
                 </p>
             </div>
+            <!--Datos del Restaurante-->
             <div>
                 <h4>Datos</h4>
                 <ul>
@@ -90,12 +154,41 @@
             </div>
         </section>
 
+        <!--Sección 3-->
         <section class="section3">
-            <div>
+            <!--Nombre del restaurante y tipo de cocina-->
+            <div> 
                 <h3>Sacro - Comida Vegetariana</h3>
-                <img src="IMG/imggen.png" alt="Plato de comida vegetariana" class="imgs">
-                <img src="IMG/imggen.png" alt="Foto del restaurante por dentro" class="imgs">
             </div>
+            <!--Carrusel con imágenes del restaurante y de la comida-->
+            <div id="demo3" class="carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                  <li data-target="#demo3" data-slide-to="6" class="active"></li>
+                  <li data-target="#demo3" data-slide-to="7"></li>
+                  <li data-target="#demo3" data-slide-to="8"></li>
+                </ul>
+
+                <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo3" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="IMG/imagen.png" alt="imagen del restaurante">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/imagen.png" alt="imagen del restaurante">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/imagen.png" alt="imagen de la comida">
+                    </div>
+                </div>
+            </div>
+            <!--Reseña del restaurante-->
             <div>
                 <h3>Reseña</h3>
                 <p>For his inaugural restaurant venture, entrepreneur Damian Harburguer’s plant-based eatery, located in style conscious Palermo Hollywood, proposes an international approach to vegan food, with a slick menu of seasonal and organic local ingredients, strictly devoid of animal derivatives.
@@ -104,6 +197,7 @@
                     The sharing options include the wafer thin dosa and stand out palta tikka, aromatic crusted avocado in a velvety smooth curry sauce. Don’t miss the sublime ‘Snickers’ style salted caramel chocolate tart and avocado lime pie, rounded off with an almond milk cortado. Everything is made in house including the fresh coconut water available to go.
                 </p>
             </div>
+            <!--Datos del Restaurante-->
             <div>
                 <h4>Datos</h4>
                 <ul>
@@ -115,12 +209,41 @@
             </div>
         </section>
 
+        <!--Sección 4-->
         <section class="section4">
-            <div>
+            <!--Nombre del restaurante y tipo de cocina-->
+            <div> 
                 <h3>Sacro - Comida Vegetariana</h3>
-                <img src="IMG/imggen.png" alt="Plato de comida vegetariana" class="imgs">
-                <img src="IMG/imggen.png" alt="Foto del restaurante por dentro" class="imgs">
             </div>
+            <!--Carrusel con imágenes del restaurante y de la comida-->
+            <div id="demo4" class="carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                  <li data-target="#demo4" data-slide-to="9" class="active"></li>
+                  <li data-target="#demo4" data-slide-to="10"></li>
+                  <li data-target="#demo4" data-slide-to="11"></li>
+                </ul>
+
+                <a class="carousel-control-prev" href="#demo4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="IMG/imagen.png" alt="imagen del restaurante">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/imagen.png" alt="imagen del restaurante">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/imagen.png" alt="imagen de la comida">
+                    </div>
+                </div>
+            </div>
+            <!--Reseña del restaurante-->
             <div>
                 <h3>Reseña</h3>
                 <p>For his inaugural restaurant venture, entrepreneur Damian Harburguer’s plant-based eatery, located in style conscious Palermo Hollywood, proposes an international approach to vegan food, with a slick menu of seasonal and organic local ingredients, strictly devoid of animal derivatives.
@@ -129,6 +252,7 @@
                     The sharing options include the wafer thin dosa and stand out palta tikka, aromatic crusted avocado in a velvety smooth curry sauce. Don’t miss the sublime ‘Snickers’ style salted caramel chocolate tart and avocado lime pie, rounded off with an almond milk cortado. Everything is made in house including the fresh coconut water available to go.
                 </p>
             </div>
+            <!--Datos del Restaurante-->
             <div>
                 <h4>Datos</h4>
                 <ul>
@@ -160,6 +284,8 @@
             By: Mauro Di Cesare
         </p>
     </footer>
-            
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>

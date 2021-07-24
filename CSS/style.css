@@ -114,6 +114,10 @@ aside{
     animation-iteration-count: 1;
 }
 
+.aside-menu li a:hover{
+    background-image: linear-gradient(to right,#116c48,#71B78D);
+}
+
 @keyframes animamenu {
     0%{
         background-color: #ffffff;
@@ -138,9 +142,6 @@ aside{
 
 }
 
-.aside-menu li a:hover{
-    background-image: linear-gradient(to right,#116c48,#71B78D);
-}
 /*---------------------------------*/
 
 /*------Estilos en el main------*/
@@ -203,6 +204,10 @@ main{
     column-gap: 100px;
 }
 
+.carousel-inner{
+    width: 320px;
+}
+
 /*main de contacto (Form)*/
 .contact-form fieldset{
     display: flex;
@@ -263,7 +268,9 @@ footer{
 
 .topbut:hover{
     box-shadow: 5px 5px #115328;
-    transform: translate(-3px, -3px)
+    transform: translate(-3px, -3px);
+    text-decoration: none;
+    color: white;
 }
 
 footer p{
