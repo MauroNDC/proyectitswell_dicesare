@@ -1,0 +1,35 @@
+/*------Estilos en el footer------*/
+footer{
+    grid-area: footer;
+    margin: 1rem;
+
+    .footer__form{
+        display: inline-block;
+        width: 80%;
+    }
+
+    .footer__topbut{
+        padding: 10px;
+        background-color: #71B78D;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        right: 1rem;
+        margin-top: 30px;
+        display: inline-block;
+        border-radius: 4px;
+
+        &:hover{
+            box-shadow: 5px 5px #115328;
+            transform: translate(-3px, -3px);
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    p{
+        text-align: center;
+        font-size: small;
+    }
+}
+/*---------------------------------*/

@@ -1,0 +1,43 @@
+/*Menú lateral*/
+.aside__menu{
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    width: 209px;
+    background-color: #71B78D;
+    animation-duration: 2s;
+    animation-name: animamenu;
+    animation-iteration-count: 1;
+    position: fixed;
+
+    ul{
+        list-style: none;
+        padding: 0;
+
+        li{
+            a{
+                text-decoration: none;
+                color: white;
+                display: block;
+                margin: 10px;
+                padding: 10px;
+                border-radius: 4px;
+
+                &:hover{
+                    background-image: linear-gradient(to right,#116c48,#71B78D);
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes animamenu {
+    0%{
+        background-color: #ffffff;
+    }
+    100%{
+        background-color: #71B78D;
+    }
+}
+/*---------------------------------*/

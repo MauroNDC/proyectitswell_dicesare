@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eat's Well - Sobre Nosotros</title>
-    <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-        <a href="index.html"><img src="IMG/eatswell.jpg" alt="Logo de la página" id="top-about" class="header-logo"></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <title>Eat's Well - Blog de cocina</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img src="IMG/eatswell.jpg" alt="Logo de la página" id="top-about" class="header__logo"></a>
 
-        <ul class="header-redes">
-            <li><a href="https://ar.pinterest.com/" target="_blank"><img src="IMG/pinterestlogo.png" alt="logo de pinterest"></a></li>
-            <li><a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="IMG/iglogo.png" alt="logo de instagram"></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank"><img src="IMG/fblogo.png" alt="logo de facebook"></a></li>
-        </ul>
-
-        <br>
-
-        <input type="text" placeholder="Buscar..." class="header-browser"><button type="submit" class="header-browser__button">Buscar</button>
-
-        <h2 class="section-title">Sobre Nosotros</h2>
-    </header>
-
-    <aside>
-        <nav class="aside-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="receta.html">Recetas</a></li>
-                <li><a href="recomendacion.html">Recomendaciones de Restaurantes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="aboutus.html">Sobre Nosotros</a></li>
+            <ul class="header__redes">
+                <li><a href="https://ar.pinterest.com/" target="_blank"><img src="IMG/pinterestlogo.png" alt="logo de pinterest"></a></li>
+                <li><a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="IMG/iglogo.png" alt="logo de instagram"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="IMG/fblogo.png" alt="logo de facebook"></a></li>
             </ul>
-        </nav>
-    </aside>
 
-    <main>
-        <h3>Blog de cocina - Plant based</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quis sint mollitia doloribus. Debitis pariatur itaque perferendis iure maiores commodi voluptatem unde accusantium illum amet temporibus vel porro, adipisci laboriosam?
-        Provident obcaecati debitis, alias tenetur, numquam repellat voluptate nihil doloremque, exercitationem asperiores quod perferendis ex corrupti architecto id sed facere expedita ipsum? Voluptates minima consequatur provident suscipit illum eius alias?
-        Rerum officiis nesciunt porro suscipit est! Tempore magni iure perferendis nulla iste vitae cupiditate placeat perspiciatis eius adipisci, delectus, expedita optio vel ipsam animi corporis cum dicta, accusantium deserunt! Autem?
-        </p>
-    </main>
+            <br>
 
-    <footer class="footer">
+            <input type="text" placeholder="Buscar..." class="header__browser"><button type="submit" class="header__browser-button">Buscar</button>
 
-        <form action="#enviarns.php" class="form">
-            <fieldset  class="form__fs">
-                <legend>Suscríbete</legend>
-                <label for="suscripcion">Suscribete para recibir actualizaciones del blog:</label>
-                <input type="email" name="suscripcion" id="suscripcion" placeholder="Escriba su e-mail">
-                <button type="submit" id="suscripcion">Suscribirse</button>
-            </fieldset>
-        </form>
+            <h2 class="section-title">Sobre Nosotros</h2>
+        </header>
 
-        <a href="#top-about" class="topbut">Ir al top de la página</a>
+        <!--Menu lateral-->
+        <aside class="aside__menu">
+            <nav class="menu__nav">
+                <ul class="menu__nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="receta.html">Recetas</a></li>
+                    <li><a href="recomendacion.html">Recomendaciones de Restaurantes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="aboutus.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-        <p>
-            Inicio Mayo 2021 -
-            @Copyright "Eat's Well" -
-            By: Mauro Di Cesare
-        </p>
-    </footer>
+        <main class="main__aboutus">
+            <h3>Blog de cocina - Plant based</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quis sint mollitia doloribus. Debitis pariatur itaque perferendis iure maiores commodi voluptatem unde accusantium illum amet temporibus vel porro, adipisci laboriosam?
+            Provident obcaecati debitis, alias tenetur, numquam repellat voluptate nihil doloremque, exercitationem asperiores quod perferendis ex corrupti architecto id sed facere expedita ipsum? Voluptates minima consequatur provident suscipit illum eius alias?
+            Rerum officiis nesciunt porro suscipit est! Tempore magni iure perferendis nulla iste vitae cupiditate placeat perspiciatis eius adipisci, delectus, expedita optio vel ipsam animi corporis cum dicta, accusantium deserunt! Autem?
+            </p>
+        </main>
 
-</body>
+        <footer class="footer">
+
+            <form action="#enviarns.php" class="footer__form">
+                <fieldset  class="form__fs">
+                    <legend>Suscríbete</legend>
+                    <label for="suscripcion">Suscribete para recibir actualizaciones del blog:</label>
+                    <input type="email" name="suscripcion" id="suscripcion" placeholder="Escriba su e-mail">
+                    <button type="submit" id="suscripcion">Suscribirse</button>
+                </fieldset>
+            </form>
+
+            <a href="#top-about" class="footer__topbut">Ir al top de la página</a>
+
+            <p>
+                Inicio Mayo 2021 -
+                @Copyright "Eat's Well" -
+                By: Mauro Di Cesare
+            </p>
+        </footer>
+
+    </body>
 </html>

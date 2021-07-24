@@ -1,0 +1,135 @@
+/*------Estilos en el main------*/
+/*main del Home*/
+.main__home{
+    grid-area: main;
+    margin: 2rem;
+
+    .novedades{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .recetaSemanal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    section div{
+        margin: 2rem;
+    }
+}
+
+
+/*main de Receta*/
+
+.main__receta{
+    margin: 2rem;
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "section1 section2"
+    "section3 section4";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+    column-gap: 100px;
+
+    .section1, .section2, .section3, .section4{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .section1{
+        grid-area: section1;
+    }
+    
+    .section2{
+        grid-area: section2;
+    }
+    
+    .section3{
+        grid-area: section3;
+    }
+    
+    .section4{
+        grid-area: section4;
+    }
+}
+
+.main__recom{
+    margin: 2rem;
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "section1 section2"
+    "section3 section4";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+    column-gap: 100px;
+}
+
+.carousel-inner{
+    width: 320px;
+
+    div{
+        img{
+            width: 100%
+        }
+    }
+}
+
+/*main de contacto (Form)*/
+.contact__form {
+    grid-area: main;
+
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        background-color: #71B78D;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    input, label, select{
+        display: inline-block;
+    }
+
+    .en__columna{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .en__fila{
+        display:  flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        margin: 10px;
+        gap: 10px
+    }
+}
+
+.main__aboutus{
+    grid-area: main;
+    margin: 2rem;
+}
+
+/*---------------------------------*/

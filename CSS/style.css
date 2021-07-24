@@ -1,3 +1,269 @@
+@charset "UTF-8";
+/*----Header de la página*/
+header {
+  grid-area: header;
+  margin: 2rem;
+  /*Logo de la página*/
+  /*Buscador de la página*/
+  /*Botones de acceso a redes sociales*/
+}
+header .header__logo {
+  animation-duration: 1s;
+  animation-name: showup;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+header .header__browser {
+  width: 40%;
+}
+header .header__redes {
+  display: inline-block;
+  padding: 0;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+header .header__redes li {
+  display: inline-block;
+  right: 0;
+}
+header .header__redes a img {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+}
+header .header__redes a img:hover {
+  transform: scale(1.5, 1.5);
+}
 
+.header__browser-button {
+  border: none;
+  border-radius: 2px;
+  background-color: #71B78D;
+  padding: 3px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+@keyframes showup {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 464px;
+  }
+}
+body {
+  display: grid;
+  grid-template-areas: "aside  header" "aside  main" "aside  footer";
+  grid-template-rows: 12rem auto 6rem;
+  grid-template-columns: 1fr 8fr;
+  margin: 0;
+}
+
+/*----Estilos aplicados a toda la página----*/
+* {
+  font-family: "Lora", serif;
+  font-size: 16px;
+}
+
+/*Menú lateral*/
+.aside__menu {
+  height: 100vh;
+  top: 0;
+  margin: 0;
+  width: 209px;
+  background-color: #71B78D;
+  animation-duration: 2s;
+  animation-name: animamenu;
+  animation-iteration-count: 1;
+  position: fixed;
+}
+.aside__menu ul {
+  list-style: none;
+  padding: 0;
+}
+.aside__menu ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.aside__menu ul li a:hover {
+  background-image: linear-gradient(to right, #116c48, #71B78D);
+}
+
+@keyframes animamenu {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #71B78D;
+  }
+}
+/*---------------------------------*/
+/*------Estilos en el main------*/
+/*main del Home*/
+.main__home {
+  grid-area: main;
+  margin: 2rem;
+}
+.main__home .novedades {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.main__home .novedades div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.main__home .recetaSemanal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.main__home section div {
+  margin: 2rem;
+}
+
+/*main de Receta*/
+.main__receta {
+  margin: 2rem;
+  grid-area: main;
+  display: grid;
+  grid-template-areas: "section1 section2" "section3 section4";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 100px;
+  column-gap: 100px;
+}
+.main__receta .section1, .main__receta .section2, .main__receta .section3, .main__receta .section4 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+.main__receta .section1 {
+  grid-area: section1;
+}
+.main__receta .section2 {
+  grid-area: section2;
+}
+.main__receta .section3 {
+  grid-area: section3;
+}
+.main__receta .section4 {
+  grid-area: section4;
+}
+
+.main__recom {
+  margin: 2rem;
+  grid-area: main;
+  display: grid;
+  grid-template-areas: "section1 section2" "section3 section4";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 100px;
+  column-gap: 100px;
+}
+
+.carousel-inner {
+  width: 320px;
+}
+.carousel-inner div img {
+  width: 100%;
+}
+
+/*main de contacto (Form)*/
+.contact__form {
+  grid-area: main;
+}
+.contact__form fieldset {
+  display: flex;
+  flex-direction: column;
+  background-color: #71B78D;
+}
+.contact__form form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contact__form input, .contact__form label, .contact__form select {
+  display: inline-block;
+}
+.contact__form .en__columna {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  gap: 10px;
+}
+.contact__form .en__fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.main__aboutus {
+  grid-area: main;
+  margin: 2rem;
+}
+
+/*---------------------------------*/
+/*------Estilos en el footer------*/
+footer {
+  grid-area: footer;
+  margin: 1rem;
+}
+footer .footer__form {
+  display: inline-block;
+  width: 80%;
+}
+footer .footer__topbut {
+  padding: 10px;
+  background-color: #71B78D;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  right: 1rem;
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 4px;
+}
+footer .footer__topbut:hover {
+  box-shadow: 5px 5px #115328;
+  transform: translate(-3px, -3px);
+  text-decoration: none;
+  color: white;
+}
+footer p {
+  text-align: center;
+  font-size: small;
+}
+
+/*---------------------------------*/
+/*----Estilos para tablas----*/
+table {
+  background-color: #d2f9d9;
+  border-collapse: collapse;
+}
+table thead, table tbody {
+  border: 1px black solid;
+}
+
+/*Título por sección*/
+.section-title {
+  color: #116c48;
+  font-size: xx-large;
+}
 
 /*# sourceMappingURL=style.css.map */

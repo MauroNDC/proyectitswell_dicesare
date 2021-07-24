@@ -1,198 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eat's Well - Blog de cocina</title>
-    <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head>
-<body class="container-fluid">
-    <header class="header">
-        <a href="index.html"><img src="IMG/eatswell.jpg" alt="Logo de la página" id="top" class="header-logo"></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Eat's Well - Blog de cocina</title>
+    </head>
+    <body class="container-fluid">
+        <header class="header">
 
-        <ul class="header-redes">
-            <li><a href="https://ar.pinterest.com/" target="_blank"><img src="IMG/pinterestlogo.png" alt="logo de pinterest"></a></li>
-            <li><a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="IMG/iglogo.png" alt="logo de instagram"></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank"><img src="IMG/fblogo.png" alt="logo de facebook"></a></li>
-        </ul>
+            <a href="index.html"><img src="IMG/eatswell.jpg" alt="Logo de la página" id="top" class="header__logo"></a>
 
-        <br>
-
-        <input type="text" placeholder="Buscar..." class="header-browser"><button type="submit" class="header-browser__button">Buscar</button>
-
-        <h1 class="section-title">Eat's well - Blog de cocina</h1>
-    </header>
-
-    <aside class="container-fluid">
-        <nav class="aside-menu container-fluid">
-            <ul class="nav">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="receta.html" class="nav-link">Recetas</a></li>
-                <li class="nav-item"><a href="recomendacion.html" class="nav-link">Recomendaciones de Restaurantes</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="aboutus.html" class="nav-link">Sobre Nosotros</a></li>
+            <ul class="header__redes">
+                <li><a href="https://ar.pinterest.com/" target="_blank"><img src="IMG/pinterestlogo.png" alt="logo de pinterest"></a></li>
+                <li><a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="IMG/iglogo.png" alt="logo de instagram"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="IMG/fblogo.png" alt="logo de facebook"></a></li>
             </ul>
-        </nav>
-    </aside>
 
-    <main class="main-home">
-        <section class="recetaSemanal">
-            <div>
-                <h2>Receta de la semana</h2>
-                <img src="IMG/imggen.png" alt="Imagen de pan brasilero" class="imgs">
-            </div>
+            <br>
 
-            <div>
-                <h3>Ingredientes</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Ingrediente</th>
-                                <th>Cantidad</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Leche</td>
-                                <td>1 taza</td>
-                            </tr>
-                            <tr>
-                                <td>Aceite de oliva</td>
-                                <td>1/2 taza</td>
-                            </tr>
-                            <tr>
-                                <td>Sal</td>
-                                <td>1 cdta</td>
-                            </tr>
-                            <tr>
-                                <td>Almidón de tapioca</td>
-                                <td>4 tazas</td>
-                            </tr>
-                            <tr>
-                                <td>Huevos</td>
-                                <td>3 unidades</td>
-                            </tr>
-                            <tr>
-                                <td>Queso parmesano</td>
-                                <td>250g</td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </div>
+            <input type="text" placeholder="Buscar..." class="header__browser"><button type="submit" class="header__browser-button">Buscar</button>
 
-            <div>
-                <h3>Receta</h3>
-                    <ol> 
-                        <li>Añadir la leche, aceite y sal en una olla. Remover y llevar a ebullición. Apagar el fuego y reservar.</li>
-                        <li>En un bol, añadir el almidón de tapioca. Poco a poco verter la leche caliente mientras mezclamos con una cuchara de madera.</li>
-                        <li>Una vez que la mezcla no esté tan caliente, mezclar con las manos.</li>
-                        <li>Añadir los 3 huevos e inmediatamente mezclar todo. Luego añadir el queso rallado. Mezclar bien y amasar hasta que la masa no se pegue a tus manos. Llevará unos minutos, pero no te preocupes que así es.</li>
-                        <li>Tomar un trozo de la masa y formar una bolita de unos 2,5 cm. Colocar en una bandeja con papel de horno, dejando unos 2,5 cm de espacio entre ellas.</li>
-                        <li>Hornear en horno precalentado a 200ºC por 25 minutos o hasta que el queso se vuelva dorado y las bolitas estén cocidas. Consumir tibias, a disfrutar!</li>
-                    </ol>
-            </div>
-        </section>
+            <h1 class="section__title">Eat's well - Blog de cocina</h1>
+        </header>
 
-        <section class="novedades">
-            <h2>Novedades</h2>
-            
-            <h3>Cocina al vacío</h3>
-            <div>
-                <div>
-                    <img src="IMG/imggen.png" alt="cocinaalvacio" class="imgs">
-                </div>
-                <div>
-                    <p>
-                        Si bien esta técnica se venía implementando en la previa de la pandemia, este año fue la estrella.
-                        Además de empresas de viandas que ya la utilizaban como Simpleat, empezaron a usarla restaurantes.
-                        Uno de los primeros fue Negresco, el restaurante del Palladio Hotel.
-                        Hoy, con las reaperturas, representa el 15% de las ventas pero la usaron en todos los boxes que vendieron por las Fiestas.
-                    
-                        “Se adapta a cualquier situación, permite una conservación óptima, mantener las características organolépticas por mucho más tiempo,
-                        llevar a cabo una cocción casi perfecta y lograr el punto deseado de cada producto”, enumera sus virtudes Nahuel Pomponio,
-                        chef que tiene su propia empresa de catering y vende platos de todo tipo –hasta pizzas-- al vacío.
-                        “Esta modalidad vino para quedarse y va a ser una alternativa más al momento de pedir comida a domicilio”, vaticina.
-                    </p>
-                </div>
-            </div>
-            
-            <h3>La hora Vegana</h3>
-            <div>
-                <div>
-                    <img src="IMG/imggen.png" alt="veganfood" class="imgs">
-                </div>
-                <div>
-                    <p>
-                        La comida basada en plantas se expande en los restaurantes y en las góndolas, con marcas que apuestan netamente a este público.
-                        “Se estima que el 9% de la población argentina es vegana o vegetariana.
-                        Podríamos decir que más de 4 millones de argentinos eligen esta alimentación”, calcula Mauricio Alonso, country manager de NotCo Argentina,
-                        una empresa que produce desde hamburguesas a helados veganos y que tiene en carpeta varios lanzamientos de productos para este año.
-                    </p>
-                </div>
-            </div>
+        <!--Menu lateral-->
+        <aside class="aside__menu">
+            <nav class="menu__nav">
+                <ul class="menu__nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="receta.html">Recetas</a></li>
+                    <li><a href="recomendacion.html">Recomendaciones de Restaurantes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="aboutus.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-            <h3>Cocina al vacío</h3>
-            <div>
+        <main class="main__home">
+            <section class="recetaSemanal">
                 <div>
-                    <img src="IMG/imggen.png" alt="cocinaalvacio" class="imgs">
+                    <h2>Receta de la semana</h2>
+                    <img src="IMG/imggen.png" alt="Imagen de pan brasilero" class="imgs">
                 </div>
-                <div>
-                    <p>
-                        Si bien esta técnica se venía implementando en la previa de la pandemia, este año fue la estrella.
-                        Además de empresas de viandas que ya la utilizaban como Simpleat, empezaron a usarla restaurantes.
-                        Uno de los primeros fue Negresco, el restaurante del Palladio Hotel.
-                        Hoy, con las reaperturas, representa el 15% de las ventas pero la usaron en todos los boxes que vendieron por las Fiestas.
-                    
-                        “Se adapta a cualquier situación, permite una conservación óptima, mantener las características organolépticas por mucho más tiempo,
-                        llevar a cabo una cocción casi perfecta y lograr el punto deseado de cada producto”, enumera sus virtudes Nahuel Pomponio,
-                        chef que tiene su propia empresa de catering y vende platos de todo tipo –hasta pizzas-- al vacío.
-                        “Esta modalidad vino para quedarse y va a ser una alternativa más al momento de pedir comida a domicilio”, vaticina.
-                    </p>
-                </div>
-            </div>
-            
-            <h3>La hora Vegana</h3>
-            <div>
-                <div>
-                    <img src="IMG/imggen.png" alt="veganfood" class="imgs">
-                </div>
-                <div>
-                    <p>
-                        La comida basada en plantas se expande en los restaurantes y en las góndolas, con marcas que apuestan netamente a este público.
-                        “Se estima que el 9% de la población argentina es vegana o vegetariana.
-                        Podríamos decir que más de 4 millones de argentinos eligen esta alimentación”, calcula Mauricio Alonso, country manager de NotCo Argentina,
-                        una empresa que produce desde hamburguesas a helados veganos y que tiene en carpeta varios lanzamientos de productos para este año.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <form action="#enviarns.php" class="form">
-            <fieldset  class="form__fs">
-                <legend>Suscríbete</legend>
-                <label for="suscripcion">Suscribete para recibir actualizaciones del blog:</label>
-                <input type="email" name="suscripcion" id="suscripcion" placeholder="Escriba su e-mail">
-                <button type="submit" id="suscripcion">Suscribirse</button>
-            </fieldset>
-        </form>
+                <div>
+                    <h3>Ingredientes</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ingrediente</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Leche</td>
+                                    <td>1 taza</td>
+                                </tr>
+                                <tr>
+                                    <td>Aceite de oliva</td>
+                                    <td>1/2 taza</td>
+                                </tr>
+                                <tr>
+                                    <td>Sal</td>
+                                    <td>1 cdta</td>
+                                </tr>
+                                <tr>
+                                    <td>Almidón de tapioca</td>
+                                    <td>4 tazas</td>
+                                </tr>
+                                <tr>
+                                    <td>Huevos</td>
+                                    <td>3 unidades</td>
+                                </tr>
+                                <tr>
+                                    <td>Queso parmesano</td>
+                                    <td>250g</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
 
-        <a href="#top" class="topbut">Ir al top de la página</a>
-        <p>
-            Inicio Mayo 2021 -
-            @Copyright "Eat's Well" -
-            By: Mauro Di Cesare
-        </p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
+                <div>
+                    <h3>Receta</h3>
+                        <ol> 
+                            <li>Añadir la leche, aceite y sal en una olla. Remover y llevar a ebullición. Apagar el fuego y reservar.</li>
+                            <li>En un bol, añadir el almidón de tapioca. Poco a poco verter la leche caliente mientras mezclamos con una cuchara de madera.</li>
+                            <li>Una vez que la mezcla no esté tan caliente, mezclar con las manos.</li>
+                            <li>Añadir los 3 huevos e inmediatamente mezclar todo. Luego añadir el queso rallado. Mezclar bien y amasar hasta que la masa no se pegue a tus manos. Llevará unos minutos, pero no te preocupes que así es.</li>
+                            <li>Tomar un trozo de la masa y formar una bolita de unos 2,5 cm. Colocar en una bandeja con papel de horno, dejando unos 2,5 cm de espacio entre ellas.</li>
+                            <li>Hornear en horno precalentado a 200ºC por 25 minutos o hasta que el queso se vuelva dorado y las bolitas estén cocidas. Consumir tibias, a disfrutar!</li>
+                        </ol>
+                </div>
+            </section>
+
+            <section class="novedades">
+                <h2>Novedades</h2>
+                
+                <h3>Cocina al vacío</h3>
+                <div>
+                    <div>
+                        <img src="IMG/imggen.png" alt="cocinaalvacio" class="imgs">
+                    </div>
+                    <div>
+                        <p>
+                            Si bien esta técnica se venía implementando en la previa de la pandemia, este año fue la estrella.
+                            Además de empresas de viandas que ya la utilizaban como Simpleat, empezaron a usarla restaurantes.
+                            Uno de los primeros fue Negresco, el restaurante del Palladio Hotel.
+                            Hoy, con las reaperturas, representa el 15% de las ventas pero la usaron en todos los boxes que vendieron por las Fiestas.
+                        
+                            “Se adapta a cualquier situación, permite una conservación óptima, mantener las características organolépticas por mucho más tiempo,
+                            llevar a cabo una cocción casi perfecta y lograr el punto deseado de cada producto”, enumera sus virtudes Nahuel Pomponio,
+                            chef que tiene su propia empresa de catering y vende platos de todo tipo –hasta pizzas-- al vacío.
+                            “Esta modalidad vino para quedarse y va a ser una alternativa más al momento de pedir comida a domicilio”, vaticina.
+                        </p>
+                    </div>
+                </div>
+                
+                <h3>La hora Vegana</h3>
+                <div>
+                    <div>
+                        <img src="IMG/imggen.png" alt="veganfood" class="imgs">
+                    </div>
+                    <div>
+                        <p>
+                            La comida basada en plantas se expande en los restaurantes y en las góndolas, con marcas que apuestan netamente a este público.
+                            “Se estima que el 9% de la población argentina es vegana o vegetariana.
+                            Podríamos decir que más de 4 millones de argentinos eligen esta alimentación”, calcula Mauricio Alonso, country manager de NotCo Argentina,
+                            una empresa que produce desde hamburguesas a helados veganos y que tiene en carpeta varios lanzamientos de productos para este año.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Cocina al vacío</h3>
+                <div>
+                    <div>
+                        <img src="IMG/imggen.png" alt="cocinaalvacio" class="imgs">
+                    </div>
+                    <div>
+                        <p>
+                            Si bien esta técnica se venía implementando en la previa de la pandemia, este año fue la estrella.
+                            Además de empresas de viandas que ya la utilizaban como Simpleat, empezaron a usarla restaurantes.
+                            Uno de los primeros fue Negresco, el restaurante del Palladio Hotel.
+                            Hoy, con las reaperturas, representa el 15% de las ventas pero la usaron en todos los boxes que vendieron por las Fiestas.
+                        
+                            “Se adapta a cualquier situación, permite una conservación óptima, mantener las características organolépticas por mucho más tiempo,
+                            llevar a cabo una cocción casi perfecta y lograr el punto deseado de cada producto”, enumera sus virtudes Nahuel Pomponio,
+                            chef que tiene su propia empresa de catering y vende platos de todo tipo –hasta pizzas-- al vacío.
+                            “Esta modalidad vino para quedarse y va a ser una alternativa más al momento de pedir comida a domicilio”, vaticina.
+                        </p>
+                    </div>
+                </div>
+                
+                <h3>La hora Vegana</h3>
+                <div>
+                    <div>
+                        <img src="IMG/imggen.png" alt="veganfood" class="imgs">
+                    </div>
+                    <div>
+                        <p>
+                            La comida basada en plantas se expande en los restaurantes y en las góndolas, con marcas que apuestan netamente a este público.
+                            “Se estima que el 9% de la población argentina es vegana o vegetariana.
+                            Podríamos decir que más de 4 millones de argentinos eligen esta alimentación”, calcula Mauricio Alonso, country manager de NotCo Argentina,
+                            una empresa que produce desde hamburguesas a helados veganos y que tiene en carpeta varios lanzamientos de productos para este año.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <form action="#enviarns.php" class="footer__form">
+                <fieldset  class="form__fs">
+                    <legend>Suscríbete</legend>
+                    <label for="suscripcion">Suscribete para recibir actualizaciones del blog:</label>
+                    <input type="email" name="suscripcion" id="suscripcion" placeholder="Escriba su e-mail">
+                    <button type="submit" id="suscripcion">Suscribirse</button>
+                </fieldset>
+            </form>
+
+            <a href="#top" class="footer__topbut">Ir al top de la página</a>
+            <p>
+                Inicio Mayo 2021 -
+                @Copyright "Eat's Well" -
+                By: Mauro Di Cesare
+            </p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
 </html>

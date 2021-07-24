@@ -1,0 +1,63 @@
+/*----Header de la página*/
+header {
+    grid-area: header;
+    margin: 2rem;
+    
+    /*Logo de la página*/
+    .header__logo{
+        animation-duration: 1s;
+        animation-name: showup;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-timing-function: linear;
+    }
+
+    /*Buscador de la página*/
+    .header__browser{
+        width: 40%;
+    }
+    /*Botones de acceso a redes sociales*/
+    .header__redes{
+        display: inline-block;
+        padding: 0;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+
+        li{
+            display: inline-block;
+            right: 0;
+        }
+
+        a{
+            img{
+                width: 3rem;
+                height: 3rem;
+                display: block;
+                &:hover{
+                    transform: scale(1.5, 1.5);
+                }
+            }
+        }
+    }
+}
+
+.header__browser-button{
+    border: none;
+    border-radius: 2px;
+    background-color: #71B78D;
+    padding: 3px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+@keyframes showup{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 464px;
+    }
+}
