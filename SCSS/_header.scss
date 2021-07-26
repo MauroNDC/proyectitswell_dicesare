@@ -8,6 +8,23 @@ header {
     grid-area: header;
     margin: 2rem;
     
+    .btn{
+        background-color: #71B78D;
+        color: white;
+        border: 0px;
+        border-radius: 4px;
+        animation: none;
+        transition: 0ms;
+    }
+
+    .btn:hover{
+        background-color: #71B78D;
+        box-shadow: -5px -5px #116c48;
+        transform: translate(3px, 3px);
+        animation: none;
+        color: white;
+    }
+      
     /*Logo de la página*/
     .header__logo{
         animation-duration: 1s;
@@ -15,6 +32,9 @@ header {
         animation-iteration-count: 1;
         animation-direction: normal;
         animation-timing-function: linear;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /*Buscador de la página*/

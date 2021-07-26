@@ -7,12 +7,30 @@ header {
   /*Buscador de la página*/
   /*Botones de acceso a redes sociales*/
 }
+header .btn {
+  background-color: #71B78D;
+  color: white;
+  border: 0px;
+  border-radius: 4px;
+  animation: none;
+  transition: 0ms;
+}
+header .btn:hover {
+  background-color: #71B78D;
+  box-shadow: -5px -5px #116c48;
+  transform: translate(3px, 3px);
+  animation: none;
+  color: white;
+}
 header .header__logo {
   animation-duration: 1s;
   animation-name: showup;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-timing-function: linear;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 header .header__browser {
   width: 40%;
@@ -58,9 +76,9 @@ header .header__redes a img:hover {
 }
 body {
   display: grid;
-  grid-template-areas: "aside  header" "aside  main" "aside  footer";
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: 12rem auto 6rem;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 1fr;
   margin: 0;
 }
 
@@ -72,15 +90,24 @@ body {
 
 /*Menú lateral*/
 .aside__menu {
-  height: 100vh;
-  top: 0;
-  margin: 0;
-  width: 209px;
+  /*    height: 100vh;
+      top: 0;
+      margin: 0;
+      width: 209px;
+      background-color: $green;
+      animation-duration: 2s;
+      animation-name: animamenu;
+      animation-iteration-count: 1;
+  */
+}
+.aside__menu .offcanvas {
   background-color: #71B78D;
-  animation-duration: 2s;
-  animation-name: animamenu;
-  animation-iteration-count: 1;
-  position: fixed;
+  width: 20%;
+}
+.aside__menu .offcanvas .offcanvas-title {
+  color: white;
+  background-color: #116c48;
+  display: inline;
 }
 .aside__menu ul {
   list-style: none;
@@ -93,6 +120,7 @@ body {
   margin: 10px;
   padding: 8px;
   border-radius: 4px;
+  transition: 300ms;
 }
 .aside__menu ul li a:hover {
   background-image: linear-gradient(to right, #116c48, #71B78D);
