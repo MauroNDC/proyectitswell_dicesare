@@ -49,9 +49,10 @@ header {
     }
     /*Botones de acceso a redes sociales*/
     .header__redes{
-        display: inline-block;
-        padding: 0;
+        display: block;
         position: absolute;
+        padding: 0;
+        left: 90%;
         right: 1rem;
         top: 1rem;
 

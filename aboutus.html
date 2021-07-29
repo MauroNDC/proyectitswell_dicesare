@@ -16,8 +16,10 @@
     <body>
         <header class="header">
             <!--Botón del menu-->
-            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                Menu
+            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+                <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
             </a>
 
             <a href="index.html"><img src="IMG/eatswell.jpg" alt="Logo de la página" id="top-about" class="header__logo"></a>
@@ -37,19 +39,19 @@
 
         <!--Menu lateral-->
         <aside class="aside__menu">
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
                 <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="receta.html">Receta</a></li>
-                    <li><a href="recomendacion.html">Recomendacion</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="aboutus.html">About us</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="receta.html">Receta</a></li>
+                        <li><a href="recomendacion.html">Recomendacion</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                    </ul>
                 </div>
             </div>
         </aside>
