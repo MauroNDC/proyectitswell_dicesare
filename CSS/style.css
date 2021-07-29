@@ -15,6 +15,10 @@ header .btn {
   animation: none;
   transition: 0ms;
 }
+header .btn .bi {
+  width: 2rem;
+  height: 2rem;
+}
 header .btn:hover {
   background-color: #71B78D;
   box-shadow: -5px -5px #116c48;

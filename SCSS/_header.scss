@@ -15,14 +15,20 @@ header {
         border-radius: 4px;
         animation: none;
         transition: 0ms;
-    }
 
-    .btn:hover{
-        background-color: #71B78D;
-        box-shadow: -5px -5px #116c48;
-        transform: translate(3px, 3px);
-        animation: none;
-        color: white;
+        .bi{
+            width: 2rem;
+            height: 2rem;
+        }
+
+        &:hover{
+            background-color: #71B78D;
+            box-shadow: -5px -5px #116c48;
+            transform: translate(3px, 3px);
+            animation: none;
+            color: white;
+        }
+
     }
       
     /*Logo de la página*/
