@@ -24,7 +24,9 @@ $darkGreen: #116c48;
     .recetaSemanal{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        div{
+            width: 33,33%;
+        }
     }
 
     section div{
@@ -117,18 +119,18 @@ $darkGreen: #116c48;
     .en__columna{
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        margin: 10px;
-        gap: 10px;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        gap: 0.5rem;
     }
 
     .en__fila{
         display:  flex;
         flex-direction: row;
         justify-content: center;
-        padding: 10px;
-        margin: 10px;
-        gap: 10px
+        padding: 0.5rem;
+        margin: 0.5rem;
+        gap: 0.5rem;
     }
 }
 

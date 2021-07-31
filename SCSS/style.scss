@@ -25,3 +25,103 @@ table{
     font-size: xx-large;
 }
 
+/*----Para dispositivos en vista apaisajada----*/
+@media (max-width: 480px) {
+    body{
+        margin: 0;
+    }
+
+    /*--Estilos en el header--*/
+    .header__logo{
+        width: 18rem;
+        animation: none;
+        margin-top: 1rem;
+    }
+
+    .btn{
+        margin-left: 0;
+        top: 0rem;
+        height: 2.5rem;
+    }
+
+    .header__redes{
+        li{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            a img{
+                width: 2rem;
+                height: 2rem;
+                &:hover{
+                    transform: scale(1.5, 1.5);
+                }
+            }
+        } 
+
+    }
+
+    /*----Estilos en el aside*/
+    .aside__menu{
+        .offcanvas{
+            width: 50%;
+        }
+    }
+    
+
+
+
+    /*----Estilos en el main----*/
+    .main__home{
+        margin: 0;
+        .recetaSemanal{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .novedades{
+            div{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+        }
+    }
+
+    .main__receta{
+        display: grid;
+        grid-template-areas:
+        "section1" "section2"
+        "section3" "section4";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        margin: 0rem;
+    }
+
+    .main__recom{
+        margin: 2rem;
+        display: grid;
+        grid-template-areas:
+        "section1" "section2"
+        "section3" "section4";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        align-content: center;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+
+    .carousel-item img{
+        width: 100%;
+    }
+
+    .contact__form {
+    
+        form{
+            width: 80%;
+            margin-left: 3rem;
+        }
+    }
+
+}
+

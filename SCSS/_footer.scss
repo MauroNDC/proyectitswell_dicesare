@@ -6,7 +6,8 @@ $darkGreen: #116c48;
 /*------Estilos en el footer------*/
 footer{
     grid-area: footer;
-    margin: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 
     .footer__form{
         display: inline-block;
@@ -23,6 +24,11 @@ footer{
         margin-top: 30px;
         display: inline-block;
         border-radius: 4px;
+
+        .bi{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
 
         &:hover{
             box-shadow: 5px 5px $darkGreen;

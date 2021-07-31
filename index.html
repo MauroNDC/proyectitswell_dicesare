@@ -16,24 +16,25 @@
     <body>
         <header class="header">
             <!--Botón del menu-->
-            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
-                <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-            </a>
+            <div>
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+                    <svg xmlns="http://www.w3.org/2000/svg"fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </a>
 
-            <a href="index.html"><img src="IMG/eatswell.jpg" alt="Logo de la página" id="top" class="header__logo"></a>
+                <a href="index.html"><img src="IMG/eatswell.jpg" alt="Logo de la página" id="top" class="header__logo"></a>
 
-            <ul class="header__redes">
-                <li><a href="https://ar.pinterest.com/" target="_blank"><img src="IMG/pinterestlogo.png" alt="logo de pinterest"></a></li>
-                <li><a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="IMG/iglogo.png" alt="logo de instagram"></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="IMG/fblogo.png" alt="logo de facebook"></a></li>
-            </ul>
-
+                <ul class="header__redes">
+                    <li><a href="https://ar.pinterest.com/" target="_blank"><img src="IMG/pinterestlogo.png" alt="logo de pinterest"></a></li>
+                    <li><a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="IMG/iglogo.png" alt="logo de instagram"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="IMG/fblogo.png" alt="logo de facebook"></a></li>
+                </ul>
+            </div>
             <br>
-
-            <input type="text" placeholder="Buscar..." class="header__browser"><button type="submit" class="header__browser-button">Buscar</button>
-
+            <div>
+                <input type="text" placeholder="Buscar..." class="header__browser"><button type="submit" class="header__browser-button">Buscar</button>
+            </div>
             <h1 class="section__title">Eat's well - Blog de cocina</h1>
         </header>
 
@@ -57,14 +58,14 @@
         </aside>
 
         <main class="main__home">
-            <section class="recetaSemanal">
+            <section class="recetaSemanal card">
                 <div>
-                    <h2>Receta de la semana</h2>
+                    <h2 class="card-title">Receta de la semana</h2>
                     <img src="IMG/imggen.png" alt="Imagen de pan brasilero" class="imgs">
                 </div>
 
                 <div>
-                    <h3>Ingredientes</h3>
+                    <h3 class="card-title">Ingredientes</h3>
                         <table>
                             <thead>
                                 <tr>
@@ -114,10 +115,12 @@
                 </div>
             </section>
 
-            <section class="novedades">
-                <h2>Novedades</h2>
+            <section class="novedades card">
+                <div class="card-title">
+                    <h2>Novedades</h2>
+                </div>
                 
-                <h3>Cocina al vacío</h3>
+                <h3 class="card-subtitle">Cocina al vacío</h3>
                 <div>
                     <div>
                         <img src="IMG/imggen.png" alt="cocinaalvacio" class="imgs">
@@ -136,6 +139,7 @@
                         </p>
                     </div>
                 </div>
+                
                 
                 <h3>La hora Vegana</h3>
                 <div>
@@ -199,7 +203,11 @@
                 </fieldset>
             </form>
 
-            <a href="#top" class="footer__topbut">Ir al top de la página</a>
+            <a href="#top" class="footer__topbut">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                </svg>
+            </a>
             <p>
                 Inicio Mayo 2021 -
                 @Copyright "Eat's Well" -
