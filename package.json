@@ -1,7 +1,7 @@
 {
   "name": "idea_dicesare",
   "version": "1.0.0",
-  "description": "",
+  "description": "Eat's Well | Blog dedicado a la cocina Plant Based",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

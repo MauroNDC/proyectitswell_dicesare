@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Descripción-->
+        <meta name="description" content="Sección para recomendar restaurantes con comidas veganas, vegetarianas y Plant Based">
+        <!--Palabras claves-->
+        <meta name="keywords" content="blog, cocina, plant, based, basado, plantas, vegano, vegetariano, gastronomía, cooking, vegan, govegan, vegetarian">
+        <!--Autor de la página-->
+        <meta name="author" content="Mauro Di Cesare">
+        <!--Links a los CSS locales, bootstrap y bootstrap js-->
         <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
@@ -11,7 +18,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="CSS/style.css">
-        <title>Eat's Well - Blog de cocina</title>
+        <!--Título de la página-->
+        <title>Eat's Well | Blog dedicado a la cocina "Plant Based"</title>
     </head>
     <body>
         <!--Encabezado, logo, redes sociales y buscador-->
@@ -33,10 +41,10 @@
                 </ul>
             </div>
             <br>
-            <div>
+            <form>
                 <input type="text" placeholder="Buscar..." class="header__browser"><button type="submit" class="header__browser-button">Buscar</button>
-            </div>
-            <h1 class="section__title">Eat's well - Blog de cocina</h1>
+            </form>
+            <h2 class="section__title">Eat's well - Recomendación de restaurantes</h2>
         </header>
 
         <!--Menu lateral-->
@@ -57,7 +65,7 @@
                 </div>
             </div>
         </aside>
-
+        <!--Main de la página-->
         <main class="main__recom">
             <!--Sección 1-->
             <section class="section1 card">
@@ -69,9 +77,9 @@
                     <div id="demo" class="carousel slide" data-ride="carousel">
 
                         <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
                         </ul>
 
                         <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -179,9 +187,9 @@
                 <div id="demo3" class="carousel slide" data-ride="carousel">
 
                     <ul class="carousel-indicators">
-                    <li data-target="#demo3" data-slide-to="6" class="active"></li>
-                    <li data-target="#demo3" data-slide-to="7"></li>
-                    <li data-target="#demo3" data-slide-to="8"></li>
+                        <li data-target="#demo3" data-slide-to="6" class="active"></li>
+                        <li data-target="#demo3" data-slide-to="7"></li>
+                        <li data-target="#demo3" data-slide-to="8"></li>
                     </ul>
 
                     <a class="carousel-control-prev" href="#demo3" data-slide="prev">
@@ -279,7 +287,7 @@
                 </div>
             </section>
         </main>
-
+        <!--Pie de página-->
         <footer class="footer">
 
             <form action="#enviarns.php" class="footer__form">
@@ -290,7 +298,7 @@
                     <button type="submit" id="suscripcion">Suscribirse</button>
                 </fieldset>
             </form>
-
+            <!--Botón de ir al top-->
             <a href="#top" class="footer__topbut">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
@@ -303,6 +311,7 @@
                 By: Mauro Di Cesare
             </p>
         </footer>
+        <!--Scripts para aplicar bootstrap js-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

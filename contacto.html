@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Descripción-->
+        <meta name="description" content="Formulario a completar para que el autor se contacte con usted vía mail.">
+        <!--Palabras claves-->
+        <meta name="keywords" content="blog, cocina, plant, based, basado, plantas, vegano, vegetariano, gastronomía, cooking, vegan, govegan, vegetarian">
+        <!--Autor de la página-->
+        <meta name="author" content="Mauro Di Cesare">
+        <!--Links a los CSS locales, bootstrap y bootstrap js-->
         <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
@@ -11,7 +18,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="CSS/style.css">
-        <title>Eat's Well - Blog de cocina</title>
+        <!--Título de la página-->
+        <title>Eat's Well | Blog dedicado a la cocina "Plant Based"</title>
     </head>
     <body>
         <header class="header">
@@ -32,10 +40,10 @@
                 </ul>
             </div>
             <br>
-            <div>
+            <form>
                 <input type="text" placeholder="Buscar..." class="header__browser"><button type="submit" class="header__browser-button">Buscar</button>
-            </div>
-            <h1 class="section__title">Eat's well - Blog de cocina</h1>
+            </form>
+            <h2 class="section__title">Eat's well - Contacto</h2>
         </header>
 
         <!--Menu lateral-->
@@ -56,8 +64,9 @@
                 </div>
             </div>
         </aside>
-
+        <!--Main de la página-->
         <main class="contact__form">
+            <!--Formulario de contacto-->
             <form action="contactar.php" method="POST" enctype="multipart/form-data">
                 <fieldset>
                     <div class="en__columna">
@@ -91,7 +100,7 @@
                 </fieldset>
             </form>
         </main>
-
+        <!--Pie de página-->
         <footer class="footer">
             <p>
                 Inicio Mayo 2021 -

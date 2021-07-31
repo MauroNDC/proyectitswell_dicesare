@@ -213,9 +213,6 @@ body {
   column-gap: 100px;
 }
 
-.carousel-inner {
-  width: 320px;
-}
 .carousel-inner div img {
   width: 100%;
 }
